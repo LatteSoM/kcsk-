@@ -1,0 +1,164 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!-- ###### СТИЛИ КНОПОК ВЕРХНЕЙ ПАНЕЛИ ОКНА ######-->
+
+    <!-- Стиль кнопки закрытия окна -->
+    <Style x:Key="CloseWindowBtn" TargetType="Button">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="#87B6CA" Opacity="0"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="2px"/>
+    </Style>
+    <!-- Стиль кнопки разворачивания окна на весь экран-->
+    <Style x:Key="MaximizeWindowBtn" TargetType="Button">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="#87B6CA" Opacity="0"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="2px"/>
+    </Style>
+    <!-- Стиль кнопки сворчавания окна -->
+    <Style x:Key="MinimizeWindowBtn" TargetType="Button">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="#87B6CA" Opacity="0"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="2px"/>
+    </Style>
+
+
+
+    <!-- ########### СТИЛИ ДЛЯ MainWindow ###########-->
+
+    <!-- стиль для текстблока названия приложухи-->
+    <Style x:Key="MainWindowCurrCityTb" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="FontFamily" Value="/view/resources/fonts/#Jura Regular"/>
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="Margin" Value="18px 0 18px 0px"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+
+    </Style>
+
+    <!--Стиль для текстбокса с вводом города-->
+    <Style x:Key="CurrCityTbx" TargetType="TextBox">
+        <Setter Property="Background" Value="#87B6CA"/>
+        <Setter Property="Opacity" Value="0.5"/>
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="FontFamily" Value="/view/resources/fonts/#Jura Regular"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="18px 0px 18px 0"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <!--<Setter Property="Height" Value="28px"/>-->
+    </Style>
+
+    <!--Стиль для кнопки Узнать погоду -->
+    <Style x:Key="WhatWeatherBtn" TargetType="Button">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="#87B6CA" Opacity="1"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="18px 0px 18px 0"/>
+    </Style>
+    <!--Стиль лейбла внутри кнопки Узнать погоду-->
+    <Style x:Key="WhatWeatherBtnLabel" TargetType="Label">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="FontFamily" Value="/view/resources/fonts/#Jura Regular"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+    </Style>
+
+
+    <!-- ########### СТИЛИ ДЛЯ PrimaryWindow ###########-->
+
+    <!--Стиль фонового изображения-->
+    <Style x:Key="DayWindowBackground" TargetType="Image">
+        <Setter Property="Source" Value="/view/resources/images/Day.png"/>
+        <Setter Property="Stretch" Value="Fill"/>
+    </Style>
+
+    <!--Стиль кнопок погода и найстроки-->
+    <Style x:Key="ChangePageBtn" TargetType="Button">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="yellow" Opacity="0"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderThickness" Value="0 0 0 0"/>
+        <Setter Property="BorderBrush" Value="#ffffff"/>
+        <Setter Property="Margin" Value="37 0 37 0"/>
+        <Setter Property="FontFamily" Value="/view/resources/fonts/#Jura Regular"/>
+        <Setter Property="FontSize" Value="35"/>
+    </Style>
+
+    <SolidColorBrush x:Key="Button.MouseOver.Foreground" Color="#FF3C7FB1"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+    <!--<SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>-->
+    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+    <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+    <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+    <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+    <ControlTemplate x:Key="WeatherSettingsBtnControlTemplate" TargetType="{x:Type ButtonBase}">
+        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="Button.IsDefaulted" Value="true">
+                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="TextElement.Foreground" TargetName="border" Value="{StaticResource Button.MouseOver.Foreground}"/>
+                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+                <Setter Property="Opacity" TargetName="border" Value="0.4"/>
+                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+            </Trigger>
+
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <!--Стиль лейблов внутри кнопок погода и найстроки-->
+    <Style x:Key="ChangePageBtnLabel" TargetType="Label">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="FontFamily" Value="/view/resources/fonts/#Jura Regular"/>
+        <Setter Property="FontSize" Value="35"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+    </Style>
+    <!--Стиль текстблока с выбранным сейчас городом в левой колонке-->
+    <Style x:Key="CurrCityTb" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#3D95B9"/>
+        <Setter Property="FontFamily" Value="/view/resources/fonts/#Jura Regular"/>
+        <Setter Property="FontSize" Value="35"/>
+    </Style>
+
+
+
+
+
+
+
+</ResourceDictionary>

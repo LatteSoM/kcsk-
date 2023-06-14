@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunCloud", "SunCloud.csproj", "{B6A2FABD-9AA5-444A-BBDC-5A83D698C0C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherLib", "..\WeatherLib\WeatherLib.csproj", "{1D57061C-3536-4AEF-92EB-03E3B2EB4DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StylesLib", "..\StylesLib\StylesLib.csproj", "{8333567A-3A1C-4B79-9111-50078F28704C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControlLib", "..\CustomControlLib\CustomControlLib.csproj", "{75EF3A1A-D876-4636-A8BA-ED25E53F6EF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6A2FABD-9AA5-444A-BBDC-5A83D698C0C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A2FABD-9AA5-444A-BBDC-5A83D698C0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A2FABD-9AA5-444A-BBDC-5A83D698C0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A2FABD-9AA5-444A-BBDC-5A83D698C0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D57061C-3536-4AEF-92EB-03E3B2EB4DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D57061C-3536-4AEF-92EB-03E3B2EB4DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D57061C-3536-4AEF-92EB-03E3B2EB4DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D57061C-3536-4AEF-92EB-03E3B2EB4DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8333567A-3A1C-4B79-9111-50078F28704C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8333567A-3A1C-4B79-9111-50078F28704C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8333567A-3A1C-4B79-9111-50078F28704C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8333567A-3A1C-4B79-9111-50078F28704C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75EF3A1A-D876-4636-A8BA-ED25E53F6EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75EF3A1A-D876-4636-A8BA-ED25E53F6EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75EF3A1A-D876-4636-A8BA-ED25E53F6EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75EF3A1A-D876-4636-A8BA-ED25E53F6EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CA70997-00EE-402C-8034-871CB66C6095}
+	EndGlobalSection
+EndGlobal

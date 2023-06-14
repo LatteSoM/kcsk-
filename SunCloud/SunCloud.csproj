@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Resources\fonts\Jura-Regular.ttf" />
+    <None Remove="View\Resources\images\Blizzard.png" />
+    <None Remove="View\Resources\images\CloseBtn.png" />
+    <None Remove="View\Resources\images\CloseBtnWhite.png" />
+    <None Remove="View\Resources\images\Cloudy.png" />
+    <None Remove="View\Resources\images\Day.png" />
+    <None Remove="View\Resources\images\Downpour.png" />
+    <None Remove="View\Resources\images\Icon.png" />
+    <None Remove="View\Resources\images\Line.png" />
+    <None Remove="View\Resources\images\MaximizeBtn.png" />
+    <None Remove="View\Resources\images\MaximizeBtnWhite.png" />
+    <None Remove="View\Resources\images\MinimizeBtn.png" />
+    <None Remove="View\Resources\images\MinimizeBtnWhite.png" />
+    <None Remove="View\Resources\images\MorningEvening.png" />
+    <None Remove="View\Resources\images\Night.png" />
+    <None Remove="View\Resources\images\Rainy.png" />
+    <None Remove="View\Resources\images\Snow.png" />
+    <None Remove="View\Resources\images\Sunny.png" />
+    <None Remove="View\Resources\images\Thunderstorm.png" />
+    <None Remove="View\Resources\images\Wind.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomControlLib\CustomControlLib.csproj" />
+    <ProjectReference Include="..\StylesLib\StylesLib.csproj" />
+    <ProjectReference Include="..\WeatherLib\WeatherLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Resources\fonts\Jura-Regular.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Blizzard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\CloseBtn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\CloseBtnWhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Cloudy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Day.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Downpour.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Line.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\MaximizeBtn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\MaximizeBtnWhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\MinimizeBtn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\MinimizeBtnWhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\MorningEvening.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Night.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Rainy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Snow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Sunny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Thunderstorm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Resources\images\Wind.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
